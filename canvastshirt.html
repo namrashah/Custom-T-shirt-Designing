@@ -1,0 +1,478 @@
+
+
+
+<!DOCTYPE HTML>
+<!--
+<html>
+<head>
+<title></title>
+
+<style>
+ #changed {
+    margin: 20px ;
+    padding :  20px;
+    width:35%;
+
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+<canvas id="changed" width="3200" height="3200"></canvas>
+
+<input type="button"  name = "red" style="background-color:red;" onclick="doRed()"/>
+<input type="button"  name = "blue" style="background-color:aqua;" onclick="doBlue()"/>
+<input type="button"  name = "green"  style="background-color:#99ff33 ;"  onclick="doGreen()"/>
+<input type="button"  name = "pink"  style="background-color:Fuchsia  ;" onclick="doPink()"/>
+<input type="button"  name = "maroon"  style="background-color:FireBrick   ;" onclick="doMaroon()"/>
+<input type="button"  name = "violet"  style="background-color:#b300ff   ;" onclick="doViolet()"/>
+<input type="button"  name = "gray" style="background-color:gray   ;"  onclick="doGray()"/>
+<input type="button"  name = "white" style="background-color:white   ;"  onclick="doWhite()"/>
+<form>
+    Enter text(we recommend entering characters within a limit of 15):<input type="text" id= "inp-text" value="Enter text"  maxlength="17"  />
+
+<input type="button"  name = "white" value="Submit"   onclick="text()"/>
+
+</form>
+
+
+<!-- <input type="button"  name = "click"  onclick="doRed()"/> -->
+<!--<script type="text/javascript">
+//context = document.getElementById('changed').getContext("2d");
+
+var canvas = document.getElementById("changed");
+var context=canvas.getContext("2d");
+
+
+
+var imageObj = new Image();
+
+
+imageObj.onload = function() {
+    context.drawImage(imageObj, 10, 10 , 2600 , 2500);
+};
+
+imageObj.src = 'C:/Users/shahn/Desktop/IMG-20170320-WA0002.jpg';
+
+var txt = document.getElementById("inp-text").value;
+
+
+function text(){
+
+        context.fillText(txt, canvas.width/2.5, canvas.height/4);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "red";
+        context.textAlign = "center";
+
+}
+
+
+
+var element = document.getElementById("changed");
+
+function doRed(){
+    var filter = 'hue-rotate(500deg) saturate(350)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doWhite(){
+    var filter = 'hue-rotate(0deg) saturate(0)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doGreen(){
+    var filter = 'hue-rotate(240deg) saturate(350)   '; //sepia(50%) grayscale(80%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doBlue(){
+    var filter = 'hue-rotate(320deg) saturate(350) grayscale(50%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doMaroon(){
+    var filter = 'hue-rotate(500deg) saturate(350) grayscale(50%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doGray(){
+    var filter = 'hue-rotate(500deg) saturate(350) grayscale(100%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doPink(){
+    var filter = 'hue-rotate(60deg) saturate(350)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doViolet(){
+    var filter = 'hue-rotate(60deg) saturate(200) grayscale(80%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+
+
+
+
+
+
+
+/*$('#changed').mousedown(function(e){
+    var mouseX = e.pageX - this.offsetLeft;
+    var mouseY = e.pageY - this.offsetTop;
+
+    paint = true;
+    addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop);
+    redraw();
+});*/
+
+
+/*$('#changed').mousemove(function(e){
+    if(paint){
+        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+        redraw();
+    }
+});*/
+
+
+/*$('#changed').mouseup(function(e){
+    paint = false;
+});*/
+
+
+/*$('#changed').mouseleave(function(e){
+    paint = false;
+});*/
+
+
+/*var clickX = new Array();
+var clickY = new Array();
+var clickDrag = new Array();
+var paint;*/
+
+/*function addClick(x, y, dragging)
+{
+    clickX.push(x);
+    clickY.push(y);
+    clickDrag.push(dragging);
+} */
+
+/*function redraw(){
+  context.clearRect(10, 10, context.canvas.width, context.canvas.height);
+
+  context.strokeStyle = "#df4b26";
+  context.lineJoin = "round";
+  context.lineWidth = 5;
+
+  for(var i=0; i < clickX.length; i++) {
+    context.beginPath();
+    if(clickDrag[i] && i){
+      context.moveTo(clickX[i-1], clickY[i-1]);
+     }else{
+       context.moveTo(clickX[i]-1, clickY[i]);
+     }
+     context.lineTo(clickX[i], clickY[i]);
+     context.closePath();
+     context.stroke();
+  }
+/*}*/
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+-->
+
+
+
+
+
+
+<html>
+<head>
+<title></title>
+
+<style>
+ #changed {
+    margin: 0px ;
+    padding :  0px;
+    width:100%;
+  }
+  .img{
+
+    height:685px;
+    width:39.5%;
+    float:right;
+  }
+  .data{
+
+    height:100%;
+    width:60%;
+    float:left;
+  }
+  .font{
+    color:Black;
+    font-family:"Comic Sans MS";
+  }
+  .font2{
+    color:Grey;
+    font-family:"tahoma";
+  }
+</style>
+</head>
+<body bgcolor=#EEE>
+<div>
+  <div class="data">
+    <div>
+<table style="float:left">
+<tr>
+<td colspan=2>
+<h2 class="font2">Apply color:</h2></td></tr>
+<tr>
+<td><h3><font class="font" style="color:red;">Red</td>
+<td><input type="button"  name = "red" style="background-color:red;" onclick="doRed()"/></font></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:Blue;">Blue</td>
+<td><input type="button"  name = "blue" style="background-color:aqua;" onclick="doBlue()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:green;"><h3>Green</td>
+<td><input type="button"  name = "green"  style="background-color:#99ff33 ;"  onclick="doGreen()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:pink;"><h3>Pink</td>
+<td><input type="button"  name = "pink"  style="background-color:Fuchsia  ;" onclick="doPink()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:maroon;"><h3>Maroon</td>
+<td><input type="button"  name = "maroon"  style="background-color:FireBrick   ;" onclick="doMaroon()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:violet;"><h3>Violet</td>
+<td><input type="button"  name = "violet"  style="background-color:#b300ff   ;" onclick="doViolet()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:grey;"><h3>Grey</td>
+<td><input type="button"  name = "gray" style="background-color:gray   ;"  onclick="doGray()"/></h3></td></tr>
+<tr>
+<td><h3><font class="font" style="color:white;"><h3>White</td>
+<td><input type="button"  name = "white" style="background-color:white   ;"  onclick="doWhite()"/></h3></td></tr>
+</table></div>
+<div><table style="float:right; clear:center;">
+<tr>
+<td colspan="3"><h2 class="font2">Enter text</h2></td></tr>
+<tr>
+<td colspan="3"><h4>(we recommend entering characters within a limit of 15):</h4></td></tr>
+<tr>
+<td><input type="text" id= "inp-text" value="Enter text"  maxlength="15"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to center</h3></td>
+<td><input type="button"   value="center"   onclick="text()"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to top left</h3></td>
+<td><input type="button"   value="top left"   onclick="texttl()"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to top right</h3></td>
+<td><input type="button"   value="top right"   onclick="texttr()"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to bottom left</h3></td>
+<td><input type="button"   value="bottom left"   onclick="textbl()"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to bottom right</h3></td>
+<td><input type="button"   value="bottom right"   onclick="textbr()"/></td></tr>
+<tr>
+<td><h3><font class="font"><h3>Apply to bottom center</h3></td>
+<td><input type="button"   value="bottom center"   onclick="textbc()"/></td></tr>
+<tr>
+<td colspan=3>
+<h2 class="font2">Upload image</h2></td></tr>
+<tr>
+<td><input type="file" accept="image/*" onchange="loadFile(event)"></td>
+<td><img id="output" height=0 width=0/></td></tr>
+<tr>
+<td><input type="button" onclick="img(event)" value="try image"/></td></tr>
+</table>
+</div>
+  </div>
+  <div class="img">
+  <canvas id="changed" width="3200" height="3200"></canvas>
+  </div>
+<script type="text/javascript">
+
+ var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
+
+var canvas = document.getElementById("changed");
+var context=canvas.getContext("2d");
+
+var imageObj = new Image();
+
+
+imageObj.onload = function() {
+    context.drawImage(imageObj, 10, 10 , 2600 , 2500);
+};
+
+imageObj.src = '/CustomDesigning/images/IMG-20170320-WA0002.jpg';
+
+var txt = document.getElementById("inp-text");
+
+function img(event){
+  var img2 = new Image();
+    img2.src = document.getElementById('output').src;
+  context.drawImage(img2,950,950,700,700);
+}
+
+function text(){
+
+        context.fillText(txt.value, canvas.width/2.5, canvas.height/4);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+
+function texttl(){
+
+        context.fillText(txt.value, canvas.width/4.75, canvas.height/4.5);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+function texttr(){
+
+        context.fillText(txt.value, canvas.width/1.75, canvas.height/4.5);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+function textbl(){
+
+        context.fillText(txt.value, canvas.width/4.25, canvas.height/1.75);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+function textbr(){
+
+        context.fillText(txt.value, canvas.width/1.75, canvas.height/1.75);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+
+
+function textbc(){
+
+        context.fillText(txt.value, canvas.width/2.5, canvas.height/1.68);
+        context.font="200px Comic Sans MS";
+        context.fillStyle = "black";
+        context.textAlign = "center";
+
+}
+
+
+var element = document.getElementById("changed");
+
+function doRed(){
+    var filter = 'hue-rotate(500deg) saturate(350)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doWhite(){
+    var filter = 'hue-rotate(0deg) saturate(0)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doGreen(){
+    var filter = 'hue-rotate(240deg) saturate(350)   '; //sepia(50%) grayscale(80%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doBlue(){
+    var filter = 'hue-rotate(320deg) saturate(350) grayscale(50%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doMaroon(){
+    var filter = 'hue-rotate(500deg) saturate(350) grayscale(50%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doGray(){
+    var filter = 'hue-rotate(500deg) saturate(350) grayscale(100%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doPink(){
+    var filter = 'hue-rotate(60deg) saturate(350)   '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+
+
+function doViolet(){
+    var filter = 'hue-rotate(60deg) saturate(200) grayscale(80%)  '; //sepia(50%)
+    element.style['-webkit-filter'] = filter;
+    element.style['filter'] = filter;
+
+}
+</script>
+</body>
+</html>
